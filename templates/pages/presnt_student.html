@@ -1,0 +1,93 @@
+
+    {% extends 'base.html' %}
+
+   {% block content %}
+
+<div class="container mx-auto">
+    <!-- زر توليد الجدول -->
+    <div class="mt-2 flex justify-start">
+      <button class="bg-green-600 text-white px-4 py-2 rounded-lg shadow-md hover:bg-green-700 flex items-center">
+        <span class="text-xl font-bold">+</span>
+        <span class="ml-2">توليد الجدول</span>
+      </button>
+    </div>
+
+    <!-- الجدول -->
+    <div class="overflow-x-auto mt-2">
+      <table class="w-full bg-white border border-gray-300 rounded-lg shadow-lg text-sm">
+        <thead class="bg-gray-200 text-gray-700">
+          <tr>
+            <th class="py-3 px-4 border-b">معرف المحاضرة</th>
+            <th class="py-3 px-4 border-b">القسم</th>
+            <th class="py-3 px-4 border-b">المستوى</th>
+            <th class="py-3 px-4 border-b">المجموعة</th>
+            <th class="py-3 px-4 border-b">المقرر</th>
+            <th class="py-3 px-4 border-b">المدرس</th>
+            <th class="py-3 px-4 border-b">الموقع</th>
+            <th class="py-3 px-4 border-b">تاريخ المحاضرة</th>
+            <th class="py-3 px-4 border-b">الوقت</th>
+            <th class="py-3 px-4 border-b">اليوم</th>
+            <th class="py-3 px-4 border-b">حالة المحاضرة</th>
+            <th class="py-3 px-4 border-b">إدارة</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- الصف الأول -->
+          <tr class="text-center hover:bg-gray-100">
+            <td class="py-3 px-4 border-b">معرف المحاضرة</td>
+            <td class="py-3 px-4 border-b">IT</td>
+            <td class="py-3 px-4 border-b">الأول</td>
+            <td class="py-3 px-4 border-b">المجموعة</td>
+            <td class="py-3 px-4 border-b">المقرر</td>
+            <td class="py-3 px-4 border-b">المدرس</td>
+            <td class="py-3 px-4 border-b">الموقع</td>
+            <td class="py-3 px-4 border-b">2024/1/1</td>
+            <td class="py-3 px-4 border-b">10:00 AM</td>
+            <td class="py-3 px-4 border-b">السبت</td>
+            <td class="py-3 px-4 border-b">
+              <span class="bg-gray-500 text-white py-1 px-3 rounded-full text-xs">لم يتم</span>
+            </td>
+            <td class="py-3 px-4 border-b">
+              <div class="flex justify-center items-center">
+                <button class="text-red-600 hover:text-red-800 mx-2">
+                  <i class="fas fa-times"></i>
+                </button>
+                <button class="text-gray-600 hover:text-gray-800">
+                  <i class="fas fa-door-open"></i>
+                </button>
+              </div>
+            </td>
+          </tr>
+          <!-- الصف الثاني -->
+          <tr class="text-center hover:bg-gray-100">
+            <td class="py-3 px-4 border-b">معرف المحاضرة</td>
+            <td class="py-3 px-4 border-b">IT</td>
+            <td class="py-3 px-4 border-b">الأول</td>
+            <td class="py-3 px-4 border-b">المجموعة</td>
+            <td class="py-3 px-4 border-b">المقرر</td>
+            <td class="py-3 px-4 border-b">المدرس</td>
+            <td class="py-3 px-4 border-b">الموقع</td>
+            <td class="py-3 px-4 border-b">2024/1/1</td>
+            <td class="py-3 px-4 border-b">10:00 AM</td>
+            <td class="py-3 px-4 border-b">السبت</td>
+            <td class="py-3 px-4 border-b">
+              <span class="bg-blue-600 text-white py-1 px-3 rounded-full text-xs">تعويضية</span>
+            </td>
+            <td class="py-3 px-4 border-b">
+              <div class="flex justify-center items-center">
+                <button class="text-red-600 hover:text-red-800 mx-2">
+                  <i class="fas fa-times"></i>
+                </button>
+                <button class="text-gray-600 hover:text-gray-800">
+                  <i class="fas fa-door-open"></i>
+                </button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+    
+{% endblock  %}
+    
